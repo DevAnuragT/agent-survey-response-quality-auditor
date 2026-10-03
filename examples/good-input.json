@@ -1,0 +1,6 @@
+{
+  "response_count": 1,
+  "duplicate_policy": "evidence-record",
+  "completeness_threshold": 1,
+  "inclusion_rationale": "Documented evidence and reviewer notes. "
+}

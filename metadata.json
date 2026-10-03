@@ -1,0 +1,29 @@
+{
+  "slug": "survey-response-quality-auditor",
+  "title": "Survey Response Quality Auditor",
+  "category": "research",
+  "description": "Review survey batches for duplicate policy, completeness, and inclusion rationale.",
+  "fields": {
+    "response_count": {
+      "label": "response count",
+      "kind": "number",
+      "minimum": 1
+    },
+    "duplicate_policy": {
+      "label": "duplicate policy",
+      "kind": "required",
+      "minimum": 0
+    },
+    "completeness_threshold": {
+      "label": "completeness threshold",
+      "kind": "number",
+      "minimum": 0
+    },
+    "inclusion_rationale": {
+      "label": "inclusion rationale",
+      "kind": "text",
+      "minimum": 30
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

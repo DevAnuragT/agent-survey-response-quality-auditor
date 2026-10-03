@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: survey-response-quality-auditor
+version: 0.1.0
+description: Review survey batches for duplicate policy, completeness, and inclusion rationale.
+skills:
+  - survey-response-quality-auditor-skill
+tools:
+  - review-survey-response-quality-auditor
+tags:
+  - research
+  - evidence-driven

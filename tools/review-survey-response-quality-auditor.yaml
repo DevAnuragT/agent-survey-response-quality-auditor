@@ -1,0 +1,59 @@
+{
+  "name": "review-survey-response-quality-auditor",
+  "description": "Run Survey Response Quality Auditor",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "response_count": {
+            "type": "number",
+            "description": "response count"
+          },
+          "duplicate_policy": {
+            "type": "string",
+            "description": "duplicate policy"
+          },
+          "completeness_threshold": {
+            "type": "number",
+            "description": "completeness threshold"
+          },
+          "inclusion_rationale": {
+            "type": "string",
+            "description": "inclusion rationale"
+          }
+        },
+        "required": [
+          "response_count",
+          "duplicate_policy",
+          "completeness_threshold",
+          "inclusion_rationale"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-survey-response-quality-auditor.py",
+    "runtime": "python3"
+  }
+}
